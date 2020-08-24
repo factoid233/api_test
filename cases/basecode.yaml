@@ -1,0 +1,234 @@
+-
+  desc: 基于vin估值
+  api: /service/getEvalPriceByVIN
+  method: get
+  params:
+    VIN: WBAVL310XBVN93057
+    token: 3b638c34f6757ecfba1cfb69298bfc4f
+    cityId: 11
+    allLevel: 1
+  headers:
+    Content-Type: application/json
+
+-
+  desc: 获取维保计划
+  api: /service/common/eval
+  method: get
+  params:
+    token: 9daa2df04364fd38c9ab9f86e6aa0928
+    oper: getMaintenancePlan
+    modelId: 1168834
+
+##-------精准定价接口----------
+#-
+#  desc: 精准定价接口-入参合法
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11
+#    modelId: 1
+#    regDate: 2012-01
+#    mile: 1
+#    color: 红色
+#-
+#  desc: 精准定价接口-zone过长
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 1124354657
+#    modelId: 1
+#    regDate: 2012-01
+#    mile: 1
+#    color: 红色
+#-
+#  desc: 精准定价接口-zone含特殊字符
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11，2
+#    modelId: 1
+#    regDate: 2012-01
+#    mile: 1
+#    color: 红色
+#-
+#  desc: 精准定价接口-zone为空
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone:
+#    modelId: 1
+#    regDate: 2012-01
+#    mile: 1
+#    color: 红色
+#-
+#  desc: 精准定价接口-modelId过长
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11
+#    modelId: 134547576868
+#    regDate: 2012-01
+#    mile: 1
+#    color: 红色
+#-
+#  desc: 精准定价接口-modelId含特殊字符
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11
+#    modelId: 1WEre
+#    regDate: 2012-01
+#    mile: 1
+#    color: 红色
+#-
+#  desc: 精准定价接口-modelId为空
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11
+#    modelId:
+#    regDate: 2012-01
+#    mile: 1
+#    color: 红色
+#-
+#  desc: 精准定价接口-regDate格式错误
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11
+#    modelId: 1
+#    regDate: 2012-01月
+#    mile: 1
+#    color: 红色
+#-
+#  desc: 精准定价接口-regDate为空
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11
+#    modelId: 1
+#    regDate:
+#    mile: 1
+#    color: 红色
+#-
+#  desc: 精准定价接口-mile格式错误
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11
+#    modelId: 1
+#    regDate: 2012-01
+#    mile: 1米
+#    color: 红色
+#-
+#  desc: 精准定价接口-mile为空
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11
+#    modelId: 1
+#    regDate: 2012-01
+#    mile:
+#    color: 红色
+#-
+#  desc: 精准定价接口-color格式错误
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11
+#    modelId: 1
+#    regDate: 2012-01
+#    mile: 1
+#    color: 红红红didi
+#-
+#  desc: 精准定价接口-color为空
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getSpecifiedPriceAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    zone: 11
+#    modelId: 1
+#    regDate: 2012-01
+#    mile: 1
+#    color:
+
+##-------新车价格及残值数据----------
+#-
+#  desc: 新车价格及残值数据-入参格式
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getNewCarResidualAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    modelId: 1
+#    makeDate: 2019-01-01
+#-
+#  desc: 新车价格及残值数据-modelId过长
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getNewCarResidualAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    modelId: 116883413465757
+#    makeDate: 2019-01-01
+#-
+#  desc: 新车价格及残值数据-modelId含特殊字符
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getNewCarResidualAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    modelId: 1，，
+#    makeDate: 2019-01-01
+#-
+#  desc: 新车价格及残值数据-modelId为空
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getNewCarResidualAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    modelId:
+#    makeDate: 2019-01-01
+#-
+#  desc: 新车价格及残值数据-makeDate格式错误
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getNewCarResidualAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    modelId: 1
+#    makeDate: 2019年
+#-
+#  desc: 新车价格及残值数据-makeDate为空
+#  api: /service/common/eval
+#  method: get
+#  params:
+#    oper: getNewCarResidualAnalysis
+#    token: 9daa2df04364fd38c9ab9f86e6aa0928
+#    modelId: 1
+#    makeDate:
